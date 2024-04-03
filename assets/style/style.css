@@ -1,4 +1,7 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -6,3 +9,41 @@
     box-sizing: border-box;
 }
 
+header {
+    background-image: url("../img/background-bandmusic.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.link {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: "New Rocker", system-ui;
+}
+
+.link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#Histoire {
+    height: 100vh;
+}
+
+/* .metallic-effect {
+    height: 100vh;
+    background: linear-gradient(to bottom left, #17131C 0%, #294050 40%, #34526f 70%, #4a6577 90%, #627a85 100%);
+    color: #fff;
+    padding: 1rem;
+} */
