@@ -1,0 +1,17 @@
+@use "../abstracts/mixins" as m;
+
+.footer {
+    @include m.dflex(column, nowrap, center, center, 2rem);
+    color: #f0f0f0;
+    background-color: #294050;
+    padding: 1rem 0;
+    a {
+        text-decoration: none;
+    }
+    &__social {
+        @include m.dflex(row, wrap, center, center, 2rem);
+        &__link {
+            height: 3rem;
+        }
+    }
+}

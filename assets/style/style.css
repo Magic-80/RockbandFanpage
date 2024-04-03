@@ -32,8 +32,8 @@
   font-size: 1.5rem;
 }
 
-.underlined-text {
-  text-decoration: underline #F0F0F0;
+.strong-text {
+  font-weight: 900;
 }
 
 * {
@@ -97,6 +97,30 @@ header {
 .logo-colored {
   width: 70%;
   margin-top: 60vh;
+}
+
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #f0f0f0;
+  background-color: #294050;
+  padding: 1rem 0;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer__social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__social__link {
+  height: 3rem;
 }
 
 .section {
