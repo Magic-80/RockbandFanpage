@@ -1,20 +1,21 @@
 const playIconContainers = document.querySelectorAll('#play-icon');
-const seekSliders = document.querySelector('.seek-slider');
 const durationContainers = document.querySelectorAll('.duration');
 const currentTimeContainers = document.querySelectorAll('.current-time');
 const vinyleContainers = document.querySelectorAll('.button-vinyle');
 const audioFiles = document.querySelectorAll('.audio');
+
+
 let playStates = ['play', 'play', 'play'];
 
 
 
 const togglePlayAnimation = (playIconContainer, playState) => {
     if (playState === 'play') {
-        playIconContainer.classList.remove('play');
-        playIconContainer.classList.add('pause');
-    } else {
         playIconContainer.classList.remove('pause');
         playIconContainer.classList.add('play');
+    } else {
+        playIconContainer.classList.remove('play');
+        playIconContainer.classList.add('pause');
     }
 };
 
@@ -29,18 +30,27 @@ const togglePlayState = (audio, playState) => {
 };
 
 const playAudio = (event) => {
-    const vinyleIndex = Array.from(vinyleContainers).indexOf(event.currentTarget);
-    const audio = audioFiles[vinyleIndex];
+    let targetIndex;
+    if (event.currentTarget.classList.contains('button-vinyle')) {
+        targetIndex = Array.from(vinyleContainers).indexOf(event.currentTarget);
+    } else if (event.currentTarget.id === 'play-icon') {
+        targetIndex = Array.from(playIconContainers).indexOf(event.currentTarget);
+    } else {
+        return; 
+    }
 
-    if (playStates[vinyleIndex] === 'play') {
-        playStates[vinyleIndex] = togglePlayState(audio, playStates[vinyleIndex]);
-        togglePlayAnimation(playIconContainers[vinyleIndex], playStates[vinyleIndex]);
+    const audio = audioFiles[targetIndex];
+
+    if (playStates[targetIndex] === 'play') {
+        playStates[targetIndex] = togglePlayState(audio, playStates[targetIndex]);
+        togglePlayAnimation(playIconContainers[targetIndex], playStates[targetIndex]);
     } else {
         audio.pause();
-        playStates[vinyleIndex] = 'play';
-        togglePlayAnimation(playIconContainers[vinyleIndex], playStates[vinyleIndex]);
+        playStates[targetIndex] = 'play';
+        togglePlayAnimation(playIconContainers[targetIndex], playStates[targetIndex]);
     }
 };
+
 
 
 vinyleContainers.forEach((vinyleContainer) => {
@@ -48,6 +58,10 @@ vinyleContainers.forEach((vinyleContainer) => {
 });
 
 
+playIconContainers.forEach((buttonControl) => {
+    buttonControl.classList.add('play')
+    buttonControl.addEventListener('click' , playAudio)
+})
 
 audioFiles.forEach((audio, index) => {
     audio.addEventListener('loadedmetadata', () => {
