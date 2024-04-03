@@ -1,17 +1,15 @@
+@use '../abstracts/mixins' as m;
+
+.container {
+    @include m.dflex(column, nowrap, center, center, 5rem);
+}
+
 .card {
     background: linear-gradient(to bottom left, #17131C 0%, #294050 40%, #34526f 70%, #4a6577 90%, #627a85 100%);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
     color: #fff;
     padding: 2rem;
 
-    &__desc {
-        width: 50%;
-    }
-
-    &__profile {
-        width: 50%;
-    }
+    // &__profile {
+    //     width: 50%;
+    // }
 }

@@ -11,8 +11,9 @@ body {
 }
 
 h2 {
+    width: fit-content;
     font-family: "New Rocker", system-ui;
     color: #fff;
-    padding: 2rem;
-    border-bottom: 5px #688FA4;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #688FA4 !important;
 }
