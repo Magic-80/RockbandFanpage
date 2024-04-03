@@ -7,9 +7,13 @@
 .card {
     background: linear-gradient(to bottom left, #17131C 0%, #294050 40%, #34526f 70%, #4a6577 90%, #627a85 100%);
     color: #fff;
-    padding: 2rem;
+    padding: 1rem;
 
-    // &__profile {
-    //     width: 50%;
-    // }
+    &-title {
+        font-family: "New Rocker", system-ui;
+    }
+
+    &-text {
+        font-family: "Merienda";
+    }
 }

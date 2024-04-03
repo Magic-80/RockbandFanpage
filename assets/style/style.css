@@ -11,7 +11,13 @@
 .card {
   background: linear-gradient(to bottom left, #17131C 0%, #294050 40%, #34526f 70%, #4a6577 90%, #627a85 100%);
   color: #fff;
-  padding: 2rem;
+  padding: 1rem;
+}
+.card-title {
+  font-family: "New Rocker", system-ui;
+}
+.card-text {
+  font-family: "Merienda";
 }
 
 * {
@@ -36,6 +42,7 @@ h2 {
 
 header {
   background-image: url("../img/background-bandmusic.png");
+  background-position: top;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
