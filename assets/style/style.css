@@ -76,4 +76,13 @@ header {
   margin-top: 60vh;
 }
 
+.section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
 /*# sourceMappingURL=style.css.map */
