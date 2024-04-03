@@ -15,5 +15,6 @@
 
     &-text {
         font-family: "Merienda";
+        @include m.dflex(column, wrap, none, none, 0.5rem);
     }
 }

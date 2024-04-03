@@ -1,6 +1,7 @@
 @use "../abstracts/mixins" as m;
 
 .footer {
+    font-family: "Merienda";
     @include m.dflex(column, nowrap, center, center, 2rem);
     color: #f0f0f0;
     background-color: #294050;

@@ -18,6 +18,11 @@
 }
 .card-text {
   font-family: "Merienda";
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: none;
+  align-items: none;
+  gap: 0.5rem;
 }
 
 .infos {
@@ -100,6 +105,7 @@ header {
 }
 
 .footer {
+  font-family: "Merienda";
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
