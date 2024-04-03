@@ -20,6 +20,22 @@
   font-family: "Merienda";
 }
 
+.infos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  color: #F0F0F0;
+  width: 100%;
+  font-family: "Merienda";
+  font-size: 1.5rem;
+}
+
+.underlined-text {
+  text-decoration: underline #F0F0F0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +51,7 @@ body {
 h2 {
   width: fit-content;
   font-family: "New Rocker", system-ui;
-  color: #fff;
+  color: #F0F0F0;
   padding-bottom: 1rem;
   border-bottom: 3px solid #688FA4 !important;
 }
@@ -63,18 +79,18 @@ header {
   width: 100%;
   padding: 2rem;
   background-color: rgba(74, 101, 119, 0.5019607843);
-  color: #fff;
+  color: #F0F0F0;
   z-index: 1;
 }
 
 .link {
   font-size: 1.5rem;
-  color: #fff;
+  color: #F0F0F0;
   text-decoration: none;
 }
 
 .link:hover {
-  color: #fff;
+  color: #F0F0F0;
   text-decoration: underline;
 }
 

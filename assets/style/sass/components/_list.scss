@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as m;
+
+.infos {
+    @include m.dflex(row, wrap, space-around, center, 0);
+    color: #F0F0F0;
+    width: 100%;
+    font-family: "Merienda";
+    font-size: 1.5rem;
+}
+
+.underlined-text {
+    text-decoration: underline #F0F0F0;
+}
