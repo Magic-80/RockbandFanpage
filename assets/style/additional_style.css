@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap'); */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
+} */
 
 body {
     background-color: #15131B;
 }
 
-header {
+/* header {
     background-image: url("../img/background-bandmusic.png");
     background-attachment: fixed;
     background-size: cover;
@@ -58,9 +58,9 @@ header {
 h2 {
     font-family: "New Rocker", system-ui;
     /* color: #fff */
-    padding: 2rem;
-    border-bottom: 1px #688FA4;
-}
+    /* padding: 2rem; */
+    /* border-bottom: 1px #688FA4; */
+/* } */
 
 .metallic-effect {
     background: linear-gradient(to bottom left, #17131C 0%, #294050 40%, #34526f 70%, #4a6577 90%, #627a85 100%);

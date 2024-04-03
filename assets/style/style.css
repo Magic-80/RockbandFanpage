@@ -1,3 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #15131B;
+}
+
+h2 {
+  font-family: "New Rocker", system-ui;
+  /* color: #fff */
+  padding: 2rem;
+  border-bottom: 5px #688FA4;
+}
+
+header {
+  background-image: url("../img/background-bandmusic.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-bar {
+  font-family: "New Rocker", system-ui;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  position: fixed;
+  width: 100%;
+  padding: 2rem;
+  background-color: rgba(74, 101, 119, 0.5019607843);
+  color: #fff;
+}
+
+.link {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.logo-colored {
+  width: 70%;
+  margin-top: 60vh;
+}
 
 /*# sourceMappingURL=style.css.map */
