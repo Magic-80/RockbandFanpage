@@ -8,7 +8,6 @@ const audioFiles = document.querySelectorAll('.audio');
 let playStates = ['play', 'play', 'play'];
 
 
-
 const togglePlayAnimation = (playIconContainer, playState) => {
     if (playState === 'play') {
         playIconContainer.classList.remove('pause');
@@ -39,6 +38,14 @@ const playAudio = (event) => {
         return; 
     }
 
+    for (let i = 0; i < audioFiles.length; i++) {
+        if (i !== targetIndex && !audioFiles[i].paused) {
+            audioFiles[i].pause();
+            playStates[i] = 'play';
+            togglePlayAnimation(playIconContainers[i], playStates[i]);
+        }
+    }
+    
     const audio = audioFiles[targetIndex];
 
     if (playStates[targetIndex] === 'play') {

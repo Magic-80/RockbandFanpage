@@ -3,71 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="/assets/js/script.js"></script>
+    <meta name="description" content="site pour un groupe de rock">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>RockbandFanpage</title>
     <link rel="stylesheet" href="/assets/style/sass/style.css">
 </head>
 <body>
-
-<section class="album">
-
-    <div class="album-content">
-        <div class="vinyl-container">
-            <div class="vinyl-disc-container">
-                <button aria-label="Démarrer la musique" class="button-vinyle"> <img width="250px" height="" class="vinyl-disc" src="/assets/img/VinyleA2.svg" alt="Disque Vinyle"> </button>
-            </div>
-            <img width="250px" height="" class="vinyl-cover" src="/assets/img/Album 2.svg" alt="Couverture de l'album 2">
-
-            <div id="audio-player-container">
-                <audio class="audio" src="/assets/music/Elvellon - Spellbound (Preview).mp3" preload="metadata" loop></audio>
-                <div class="audio-player-content">
-                    <button aria-label="Démarrer la musique" id="play-icon" class="button-control"></button>
-                    <span class="current-time" class="time" aria-live="assertive">0:00</span>
-                    <input type="range" max="100" value="0" aria-label="Barre de progression">
-                    <span class="duration" class="time">0:00</span>
+    
+    <section class="history">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <p class="text-light text-left fs-4 lh-5"> Depuis sa création en 2010, le quintette a bouleversé la scène et a enthousiasmé ses fans de plus en plus nombreux ainsi que la presse musicale avec un mélange captivant de guitares accrocheuses, de batteries tonitruantes et d'orchestrations magnifiques. Des magazines nationaux renommés comme Orkus et Sonic Seducer ont ainsi remarqué très tôt ces jeunes gens très prometteurs, tandis que le magazine allemand Metal Hammer les a même qualifiés de "héros de demain". Grâce à leurs premiers singles en ligne `Oraculum' (2013) et `Born From Hope' (2015) - qui était accompagné d'un clip vidéo magistral réalisé par Mirko Witzki (Any Given Day, Caliban, Deadlock) qui a presque atteint un million de vues sur YouTube au cours de la première année - le groupe a prouvé que toutes les louanges prématurées avaient été bien méritées. La sortie en 2015 de leur EP 5 titres autoproduit "Spellbound" a marqué le premier jalon de leur carrière qui a enthousiasmé les critiques de toute l'Europe. </p>
+                </div>
+                <div class="col-md">
+                    <img src="/assets/img/historyImg.png" alt="image de présentation elvellon" width="80%" class="img-fluid" alt= "img de presentation du groupe elvellon">
                 </div>
             </div>
         </div>
-
-        <div class="vinyl-container">
-            <div class="vinyl-disc-container">
-                <button aria-label="Démarrer la musique" class="button-vinyle"> <img width="250px" height="" class="vinyl-disc" src="/assets/img/Vinyle.svg" alt="Disque Vinyle"> </button>
+        
+    </section>
+    
+    <section class="album">
+        <div class="album-content">
+            <div class="vinyl-container">
+                <div class="vinyl-disc-container">
+                    <button type="button" aria-label="Démarrer la musique" class="button-vinyle"> <img width="250px" height="" class="vinyl-disc" src="/assets/img/VinyleA2.svg" alt="Disque Vinyle"> </button>
+                </div>
+                <img width="250px" height="" class="vinyl-cover" src="/assets/img/Album 2.svg" alt="Couverture de l'album 2">
+                
+                <div id="audio-player-container">
+                    <audio class="audio" src="/assets/music/Elvellon - Spellbound (Preview).mp3" preload="metadata" loop></audio>
+                    <div class="audio-player-content">
+                        <button type="button" aria-label="Démarrer la musique" id="play-icon" class="button-control"></button>
+                        <span class="current-time" class="time" aria-live="assertive">0:00</span>
+                        <input type="range" max="100" value="0" aria-label="Barre de progression">
+                        <span class="duration" class="time">0:00</span>
+                    </div>
+                </div>
             </div>
-            <img class="vinyl-cover-shadow" src="https://diggers-public.s3.eu-west-3.amazonaws.com/assets/images/vinyl/_shadow_cover.png" alt="Ombre de la couverture du vinyle">
-            <img width="250px" height="" class="vinyl-cover" src="/assets/img/Album 1.svg" alt="Couverture de l'album 1">
-
-            <div id="audio-player-container">
-                <audio class="audio" src="/assets/music/ELVELLON A Vagabonds Heart.mp3" preload="metadata" loop></audio>
-                <div class="audio-player-content">
-                    <button aria-label="Démarrer la musique" id="play-icon" class="button-control"></button>
-                    <span class="current-time" class="time" aria-live="assertive">0:00</span>
-                    <input type="range" max="100" value="0" aria-label="Barre de progression">
-                    <span class="duration" class="time">0:00</span>
+            
+            <div class="vinyl-container">
+                <div class="vinyl-disc-container">
+                    <button type="button" aria-label="Démarrer la musique" class="button-vinyle"> <img width="250px" height="" class="vinyl-disc" src="/assets/img/Vinyle.svg" alt="Disque Vinyle"> </button>
+                </div>
+                <img class="vinyl-cover-shadow" src="https://diggers-public.s3.eu-west-3.amazonaws.com/assets/images/vinyl/_shadow_cover.png" alt="Ombre de la couverture du vinyle">
+                <img width="250px" height="" class="vinyl-cover" src="/assets/img/Album 1.svg" alt="Couverture de l'album 1">
+                
+                <div id="audio-player-container">
+                    <audio class="audio" src="/assets/music/ELVELLON A Vagabonds Heart.mp3" preload="metadata" loop></audio>
+                    <div class="audio-player-content">
+                        <button type="button" aria-label="Démarrer la musique" id="play-icon" class="button-control"></button>
+                        <span class="current-time" class="time" aria-live="assertive">0:00</span>
+                        <input type="range" max="100" value="0" aria-label="Barre de progression">
+                        <span class="duration" class="time">0:00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vinyl-container">
+                <div class="vinyl-disc-container">
+                    <button type="button" aria-label="Démarrer la musique" class="button-vinyle"> <img width="250px" height="" class="vinyl-disc" src="/assets/img/VinyleA3.svg" alt="Disque Vinyle"> </button>
+                </div>
+                <img class="vinyl-cover-shadow" src="https://diggers-public.s3.eu-west-3.amazonaws.com/assets/images/vinyl/_shadow_cover.png" alt="Ombre de la couverture du vinyle">
+                <img width="250px" height="" class="vinyl-cover" src="/assets/img/Album 3.svg" alt="Couverture de l'album 3">
+                
+                <div id="audio-player-container">
+                    <audio class="audio" src="/assets/music/Until Dawn.mp3" preload="metadata" loop></audio>
+                    <div class="audio-player-content">
+                        <button type="button" aria-label="Démarrer la musique" id="play-icon" class="button-control"></button>
+                        <span class="current-time" class="time" aria-live="assertive">0:00</span>
+                        <input type="range" max="100" value="0" aria-label="Barre de progression">
+                        <span class="duration" class="time">0:00</span>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="vinyl-container">
-            <div class="vinyl-disc-container">
-                <button aria-label="Démarrer la musique" class="button-vinyle"> <img width="250px" height="" class="vinyl-disc" src="/assets/img/VinyleA3.svg" alt="Disque Vinyle"> </button>
-            </div>
-            <img class="vinyl-cover-shadow" src="https://diggers-public.s3.eu-west-3.amazonaws.com/assets/images/vinyl/_shadow_cover.png" alt="Ombre de la couverture du vinyle">
-            <img width="250px" height="" class="vinyl-cover" src="/assets/img/Album 3.svg" alt="Couverture de l'album 3">
-
-            <div id="audio-player-container">
-                <audio class="audio" src="/assets/music/Until Dawn.mp3" preload="metadata" loop></audio>
-                <div class="audio-player-content">
-                    <button aria-label="Démarrer la musique" id="play-icon" class="button-control"></button>
-                    <span class="current-time" class="time" aria-live="assertive">0:00</span>
-                    <input type="range" max="100" value="0" aria-label="Barre de progression">
-                    <span class="duration" class="time">0:00</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
