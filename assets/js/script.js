@@ -1,3 +1,5 @@
+AOS.init();
+
 const playIconContainers = document.querySelectorAll('#play-icon');
 const durationContainers = document.querySelectorAll('.duration');
 const currentTimeContainers = document.querySelectorAll('.current-time');
