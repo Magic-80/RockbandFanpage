@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+.card {
+  background: linear-gradient(to bottom left, #17131C 0%, #294050 40%, #34526f 70%, #4a6577 90%, #627a85 100%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #fff;
+  padding: 2rem;
+}
+.card__desc {
+  width: 50%;
+}
+.card__profile {
+  width: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +25,12 @@
 }
 
 body {
-  background-color: #15131B;
+  background-color: #15131B !important;
 }
 
 h2 {
   font-family: "New Rocker", system-ui;
-  /* color: #fff */
+  color: #fff;
   padding: 2rem;
   border-bottom: 5px #688FA4;
 }
