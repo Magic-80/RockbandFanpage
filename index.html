@@ -3,12 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/assets/js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title> RockbandFanpage </title>
+    <title>RockbandFanpage</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 <body>
-    
-    
+
+<section class="album">
+
+    <h1> Album </h1>
+
+    <div class="album-content">
+        <div class="vinyl-container">
+            <div class="vinyl-disc-container">
+                <button aria-label="Démarrer la musique" class="button-vinyle"> <img width="250px" height="" class="vinyl-disc" src="/assets/img/VinyleA2.svg" alt="Disque Vinyle"> </button>
+            </div>
+            <img width="250px" height="" class="vinyl-cover" src="/assets/img/Album 2.svg" alt="Couverture de l'album 2">
+
+            <div id="audio-player-container">
+                <audio class="audio" src="/assets/music/Elvellon - Spellbound (Preview).mp3" preload="metadata" loop></audio>
+                <div class="audio-player-content">
+                    <button aria-label="Démarrer la musique" id="play-icon" class="button-control"></button>
+                    <span class="current-time" class="time" aria-live="assertive">0:00</span>
+                    <input type="range" class="seek-slider" max="100" value="0" aria-label="Barre de progression">
+                    <span class="duration" class="time">0:00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="vinyl-container">
+            <div class="vinyl-disc-container">
+                <button aria-label="Démarrer la musique" class="button-vinyle"> <img width="250px" height="" class="vinyl-disc" src="/assets/img/Vinyle.svg" alt="Disque Vinyle"> </button>
+            </div>
+            <img class="vinyl-cover-shadow" src="https://diggers-public.s3.eu-west-3.amazonaws.com/assets/images/vinyl/_shadow_cover.png" alt="Ombre de la couverture du vinyle">
+            <img width="250px" height="" class="vinyl-cover" src="/assets/img/Album 1.svg" alt="Couverture de l'album 1">
+
+            <div id="audio-player-container">
+                <audio class="audio" src="/assets/music/ELVELLON A Vagabonds Heart.mp3" preload="metadata" loop></audio>
+                <div class="audio-player-content">
+                    <button aria-label="Démarrer la musique" id="play-icon" class="button-control"></button>
+                    <span class="current-time" class="time" aria-live="assertive">0:00</span>
+                    <input type="range" class="seek-slider" max="100" value="0" aria-label="Barre de progression">
+                    <span class="duration" class="time">0:00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="vinyl-container">
+            <div class="vinyl-disc-container">
+                <button aria-label="Démarrer la musique" class="button-vinyle"> <img width="250px" height="" class="vinyl-disc" src="/assets/img/VinyleA3.svg" alt="Disque Vinyle"> </button>
+            </div>
+            <img class="vinyl-cover-shadow" src="https://diggers-public.s3.eu-west-3.amazonaws.com/assets/images/vinyl/_shadow_cover.png" alt="Ombre de la couverture du vinyle">
+            <img width="250px" height="" class="vinyl-cover" src="/assets/img/Album 3.svg" alt="Couverture de l'album 3">
+
+            <div id="audio-player-container">
+                <audio class="audio" src="/assets/music/Until Dawn.mp3" preload="metadata" loop></audio>
+                <div class="audio-player-content">
+                    <button aria-label="Démarrer la musique" id="play-icon" class="button-control"></button>
+                    <span class="current-time" class="time" aria-live="assertive">0:00</span>
+                    <input aria-controls="seek-slider" type="range" class="seek-slider" max="100" value="0" aria-label="Barre de progression">
+                    <span class="duration" class="time">0:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
