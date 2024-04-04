@@ -2,7 +2,7 @@
 
 .footer {
     font-family: "Merienda";
-    @include m.dflex(column, nowrap, center, center, 2rem);
+    @include m.dflex(flex, nowrap, center, center, 2rem);
     color: #f0f0f0;
     background-color: #294050;
     padding: 1rem 0;
