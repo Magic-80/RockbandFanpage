@@ -73,6 +73,16 @@ header {
   align-items: center;
 }
 
+.burgerMenu {
+  display: none;
+}
+
+.header-menu-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-bar {
   font-family: "New Rocker", system-ui;
   display: flex;
@@ -112,6 +122,42 @@ header {
   margin-top: 60vh;
 }
 
+@media screen and (max-width: 500px) {
+  .nav-bar {
+    font-family: "New Rocker", system-ui;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    position: fixed;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgba(74, 101, 119, 0.4);
+    color: #F0F0F0;
+    z-index: 1;
+    height: 100vh;
+    margin-right: -800px;
+    transform: 0.2s all;
+  }
+  .burgerMenu {
+    display: block;
+  }
+  .header-menu-burger {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+  }
+  .logo-colored {
+    margin: 0;
+  }
+  .links {
+    gap: 50px;
+    flex-direction: column;
+  }
+}
 .footer {
   font-family: "Merienda";
   display: flex;
@@ -137,6 +183,18 @@ header {
   height: 3rem;
 }
 
+form {
+  width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-flow: column nowrap;
+  }
+  form {
+    width: 80%;
+  }
+}
 .section {
   display: flex;
   flex-flow: column nowrap;

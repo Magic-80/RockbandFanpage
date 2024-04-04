@@ -16,3 +16,17 @@
         }
     }
 }
+
+form{
+    width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+    .footer{    
+        flex-flow: column nowrap;
+    }
+
+    form{
+        width: 80%;
+    }
+}
