@@ -62,7 +62,7 @@ h2 {
 }
 
 header {
-  background-image: url("./assets/img/background-bandmusic.png");
+  background-image: url("/assets/img/background-bandmusic.png");
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
@@ -230,13 +230,13 @@ header {
 }
 .album .play {
   background-repeat: none;
-  background-image: url(/assets/img/icon/buttonPlay.svg);
+  background-image: url("./assets/img/icon/buttonPlay.svg");
   background-position: center;
 }
 .album .pause {
   display: block;
   background-repeat: none;
-  background-image: url(/assets/img/icon/buttonPause.svg);
+  background-image: url("./assets/img/icon/buttonPause.svg");
 }
 
 .history {
