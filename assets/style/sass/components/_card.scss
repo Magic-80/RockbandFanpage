@@ -1,0 +1,20 @@
+@use '../abstracts/mixins' as m;
+
+.container {
+    @include m.dflex(column, nowrap, center, center, 5rem);
+}
+
+.card {
+    background: linear-gradient(to bottom left, #17131C 0%, #294050 40%, #34526f 70%, #4a6577 90%, #627a85 100%);
+    color: #fff;
+    padding: 1rem;
+
+    &-title {
+        font-family: "New Rocker", system-ui;
+    }
+
+    &-text {
+        font-family: "Merienda";
+        @include m.dflex(column, wrap, none, none, 0.5rem);
+    }
+}

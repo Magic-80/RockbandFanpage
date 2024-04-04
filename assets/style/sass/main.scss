@@ -1,9 +1,15 @@
-@use 'abstracts/mixins';
-@use 'abstracts/variables';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
-@use 'base/reset';
-@use 'base/typography';
+@import 'components/card';
+@import 'components/list';
 
+@import 'base/reset';
+@import 'base/typography';
 
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/member';
+@import 'layout/body';
 @use 'layout/album';
 @use 'layout/history';

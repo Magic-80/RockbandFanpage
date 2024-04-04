@@ -1,0 +1,6 @@
+@use "../abstracts/mixins" as m;
+
+.section {
+    @include m.dflex(column, nowrap, space-between, center, 2rem);
+    padding: 3rem 0;
+}
