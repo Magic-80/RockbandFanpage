@@ -1,8 +1,141 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
+.card {
+  background: linear-gradient(to bottom left, #17131C 0%, #294050 40%, #34526f 70%, #4a6577 90%, #627a85 100%);
+  color: #fff;
+  padding: 1rem;
+}
+.card-title {
+  font-family: "New Rocker", system-ui;
+}
+.card-text {
+  font-family: "Merienda";
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: none;
+  align-items: none;
+  gap: 0.5rem;
+}
+
+.infos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  color: #F0F0F0;
+  width: 100%;
+  font-family: "Merienda";
+  font-size: 1.5rem;
+}
+
+.strong-text {
+  font-weight: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #15131B !important;
+}
+
+h2 {
+  width: fit-content;
+  font-family: "New Rocker", system-ui;
+  color: #F0F0F0;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #688FA4 !important;
+}
+
+header {
+  background-image: url("../img/background-bandmusic.png");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-bar {
+  font-family: "New Rocker", system-ui;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  position: fixed;
+  width: 100%;
+  padding: 2rem;
+  background-color: rgba(74, 101, 119, 0.5019607843);
+  color: #F0F0F0;
+  z-index: 1;
+}
+
+.link {
+  font-size: 1.5rem;
+  color: #F0F0F0;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #F0F0F0;
+  text-decoration: underline;
+}
+
+.logo-colored {
+  width: 70%;
+  margin-top: 60vh;
+}
+
+.footer {
+  font-family: "Merienda";
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #f0f0f0;
+  background-color: #294050;
+  padding: 1rem 0;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer__social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__social__link {
+  height: 3rem;
+}
+
+.section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */
