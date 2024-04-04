@@ -100,7 +100,7 @@ header {
 }
 
 .logo-colored {
-  width: 70%;
+  width: 50%;
   margin-top: 60vh;
 }
 
@@ -135,7 +135,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 3rem 0;
+  padding: 3rem 0px 8% 0px;
 }
 
 .album {
@@ -147,7 +147,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   gap: 0;
-  background: no-repeat top/100% url("./assets/img/albumBakcground.png");
+  background: no-repeat top/100% url("/assets/img/albumBakcground.png");
   background-attachment: fixed;
 }
 .album .album-content {
@@ -230,13 +230,13 @@ header {
 }
 .album .play {
   background-repeat: none;
-  background-image: url("./assets/img/icon/buttonPlay.svg");
+  background-image: url("/assets/img/icon/buttonPlay.svg");
   background-position: center;
 }
 .album .pause {
   display: block;
   background-repeat: none;
-  background-image: url("./assets/img/icon/buttonPause.svg");
+  background-image: url("/assets/img/icon/buttonPause.svg");
 }
 
 .history {
