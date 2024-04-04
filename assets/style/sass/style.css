@@ -83,7 +83,7 @@ header {
   position: fixed;
   width: 100%;
   padding: 2rem;
-  background-color: rgba(74, 101, 119, 0.5019607843);
+  background-color: rgba(74, 101, 119, 0.2);
   color: #F0F0F0;
   z-index: 1;
 }
