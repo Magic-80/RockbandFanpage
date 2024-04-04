@@ -100,3 +100,14 @@
     background-image: url("/assets/img/icon/buttonPause.svg");
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .album{
+    display: flex;
+    flex-direction: row;
+    height: auto; 
+    background-image: none;
+  }
+
+
+}

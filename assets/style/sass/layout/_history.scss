@@ -4,3 +4,14 @@
 p{
     font-family: "Merienda" , cursive;
 }
+
+@media screen and (max-width: 1200px) {
+    .text-history{
+        text-align: center;
+    }
+
+    .img-history{
+        display: flex;
+        justify-content: center;
+    }
+}
