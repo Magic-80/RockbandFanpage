@@ -138,6 +138,13 @@ header {
   padding: 3rem 0px 8% 0px;
 }
 
+@media screen and (max-width: 1200px) {
+  iframe {
+    border: 0;
+    width: 500px;
+    height: 400px;
+  }
+}
 .album {
   color: white;
   width: 100%;
