@@ -62,7 +62,7 @@ h2 {
 }
 
 header {
-  background-image: url("../img/background-bandmusic.png");
+  background-image: url("./assets/img/background-bandmusic.png");
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
@@ -147,7 +147,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   gap: 0;
-  background: no-repeat top/100% url("/assets/img/albumBakcground.png");
+  background: no-repeat top/100% url("./assets/img/albumBakcground.png");
   background-attachment: fixed;
 }
 .album .album-content {
