@@ -4,7 +4,7 @@
     font-family: "Merienda";
     @include m.dflex(flex, nowrap, center, center, 2rem);
     color: #f0f0f0;
-    background-color: #294050;
+    background-color: rgba(74, 101, 119, 0.2);
     padding: 1rem 0;
     a {
         text-decoration: none;

@@ -120,7 +120,7 @@ header {
   align-items: center;
   gap: 2rem;
   color: #f0f0f0;
-  background-color: #294050;
+  background-color: rgba(74, 101, 119, 0.2);
   padding: 1rem 0;
 }
 .footer a {
@@ -144,6 +144,20 @@ header {
   align-items: center;
   gap: 2rem;
   padding: 3rem 0px 8% 0px;
+}
+
+.text-video {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+iframe {
+  position: relative;
+  left: 50%;
+  top: 250px;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 1200px) {
